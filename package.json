@@ -1,0 +1,30 @@
+{
+  "name": "smarthousegate",
+  "version": "0.0.1",
+  "description": "My Google Actions <-> SmartHome Gate",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gogi0001/smarthousegate"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "smarthousegate"
+  ],
+  "license": "MIT"
+}
