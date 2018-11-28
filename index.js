@@ -8,7 +8,11 @@ express()
       console.log('Somebody requested root!');
       res.send('Hello there dude!');
   })
-  .get('/action', (req, res) => {
+  .get('/pp', (req, res) => {
+    console.log('Somebody requested PrivacyPolicy!');
+    res.send('Privacy Policy: do not push anything!');
+})
+.get('/action', (req, res) => {
     console.log('Ouch! Is seems Google Actions ACTS!');
     res.send('OK');
 })
