@@ -17,11 +17,18 @@ express()
 })
 .get('/action', (req, res) => {
     console.log('Ouch! Is seems Google Actions ACTS!');
-    // request('https://85.235.193.90:880/radiokill', { json: true }, (err, res, body) => {
-    //     if (err) { return console.log(err); }
-    //     console.log(body.url);
-    //     console.log(body.explanation);
-    //   });
+    https.get('https://85.235.193.90:880/radiokill', (resp) => {
+        let data = '';
+        resp.on('data', (chunk) => {
+            data += chunk;
+        });
+        resp.on('end', () => {
+            console.log(JSON.parse(data).explanation);
+        });
+    })
+    .on("error", (err) => {
+        console.log("Error: " + err.message);
+    });
     res.send('OK');
 })
 .listen(PORT, () => console.log(`Listening on ${ PORT }`))
