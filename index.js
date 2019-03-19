@@ -6,8 +6,8 @@ var mqtt_options = {
     password: '_cXccd2ChCAb',
   };
 
-const _ = require('lodash');
-const moment = require('moment');
+//const _ = require('lodash');
+//const moment = require('moment');
 var mqtt = require('mqtt');
 
 console.log('=== IOT Test Project ===');
