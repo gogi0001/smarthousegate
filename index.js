@@ -1,9 +1,9 @@
 const mqtt_url = 'mqtt://m21.cloudmqtt.com';
 var mqtt_options = {
-    port: 18323,
+    port: 00000,
     clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
-    username: 'czvweikj',
-    password: '_cXccd2ChCAb',
+    username: 'xxxxxxxx',
+    password: 'xxxxxxxx',
   };
 
 //const _ = require('lodash');
